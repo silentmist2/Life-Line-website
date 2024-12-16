@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Load cart data
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Populate the receipt table
     const receiptItemsContainer = document.getElementById('receipt-items');
     let totalPrice = 0;
 
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('total-price').textContent = `$${totalPrice.toFixed(2)}`;
 
-    // Form validation
     const form = document.getElementById('checkout-form');
     const inputs = form.querySelectorAll('input, textarea');
     const buyNowButton = document.getElementById('buy-now');
@@ -31,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     buyNowButton.addEventListener('click', () => {
         let isValid = true;
 
-        // Validate each input
         inputs.forEach(input => {
             const errorMsg = input.nextElementSibling;
 
@@ -47,19 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (isValid) {
-            // Redirect to the delivery page if all inputs are valid
             alert('Thank you for your purchase!');
-            localStorage.removeItem('cart'); // Clear the cart
-            form.reset(); // Reset the form
-            window.location.href = 'delivery.html'; // Redirect to delivery page
+            localStorage.removeItem('cart');
+            form.reset();
+            window.location.href = 'delivery.html';
         }
     });
 
-    // Card number input formatting
     const cardNumberInput = document.getElementById('card-number');
     cardNumberInput.addEventListener('input', function () {
-        let value = this.value.replace(/\D/g, ''); // Remove non-numeric characters
-        value = value.match(/.{1,4}/g)?.join(' ') || ''; // Format into groups of 4
-        this.value = value; // Update the input value
+        let value = this.value.replace(/\D/g, '');
+        value = value.match(/.{1,4}/g)?.join(' ') || '';
+        this.value = value;
     });
 });
