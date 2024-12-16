@@ -9,48 +9,43 @@ body{
     font-weight: 550;
     text-align: center;
 }
-/* Home Navigation Styles */
+
 nav {
-    position: relative; /* Ensures the nav bar is positioned relative to its normal flow, used for positioning child elements */
+    position: relative;
 }
 
 nav a {
-    color: rgb(0, 0, 0); /* Sets the link color to black */
-    text-decoration: none; /* Removes the underline from the links */
-    margin-right: 20px; /* Adds spacing between the navigation links */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Uses a system font stack for cross-device compatibility */
-    font-weight: 500; /* Sets a medium font weight for the links */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
 }
 
-/* Hamburger Menu Icon */
 .menu-icon {
-    display: none; /* Hides the hamburger icon on larger screens */
-    font-size: 30px; /* Sets the size of the hamburger icon */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the icon */
-    padding: 10px; /* Adds padding around the hamburger icon */
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
 }
 
-/* Hide the checkbox (used for toggling the menu) */
 #menu-toggle {
-    display: none; /* The checkbox is hidden but is still functional */
+    display: none;
 }
 
-/* Regular menu displayed on large screens */
 .menu {
-    display: flex; /* Horizontally aligns the navigation items */
-    list-style-type: none; /* Removes the default bullet points from the list items */
+    display: flex;
+    list-style-type: none;
 }
 
 .menu li {
-    margin-right: 20px; /* Adds space between each navigation item */
+    margin-right: 20px;
 }
 
-/* Hover effect for the links */
 nav a:hover {
-    color: rgb(51, 101, 207); /* Changes the color of the links when hovered */
+    color: rgb(51, 101, 207);
 }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 480px) {
     .menu {
         display: none;
@@ -77,7 +72,6 @@ nav a:hover {
         margin: 10px 0;
     }
 
-    /* Adjust heading for mobile */
     .heading1 {
         font-size: 18px;
         text-align: left;
@@ -85,7 +79,6 @@ nav a:hover {
         width: auto;
     }
 
-    /* Adjust images for responsiveness */
     #logo {
         width: 100%;
         height: auto;
@@ -97,7 +90,6 @@ nav a:hover {
         margin: 0;
     }
 
-    /* Section 1 adjustments */
     .sec1 {
         flex-direction: column;
         text-align: center;
@@ -113,7 +105,6 @@ nav a:hover {
         font-size: 1.5rem;
     }
 
-    /* Section 2 adjustments */
     .sec2 {
         background-size: cover;
         padding: 50px;
@@ -123,7 +114,6 @@ nav a:hover {
         font-size: large;
     }
 
-    /* Section 3 adjustments */
     .sec3 {
         flex-direction: column;
         align-items: center;
@@ -146,7 +136,6 @@ nav a:hover {
         font-size: small;
     }
 
-    /* Table adjustments */
     .table {
         width: 100%;
     }
@@ -155,7 +144,6 @@ nav a:hover {
         padding: 5px;
     }
 
-    /* Footer adjustments */
     .footer-container {
         display: block;
         text-align: center;
@@ -166,15 +154,19 @@ nav a:hover {
         padding: 0;
     }
 }
+
 .heading2{
     text-align: center;
 }
+
 .headtxt{
     left: 20px;
 }
+
 .headsect{
     block-size: 105px;
 }
+
 #logo{
     width: 350px;
     height: 300px;
@@ -182,6 +174,7 @@ nav a:hover {
     bottom: 166px;
     block-size: 240px;
 }
+
 .aboutusimage{
     width: 580px;
     height: auto;
@@ -196,15 +189,17 @@ nav a:hover {
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .Abus{
     position: relative;
     font-size: medium;
 }
+
 #h3{
     margin: 0;
     bottom: 3;
-
 }
+
 #para{
     font-weight: 500;
     font-size: 1.1rem;
@@ -219,10 +214,12 @@ nav a:hover {
     padding: 170px;
     margin-bottom: 60px;
 }
+
 #h4{
     text-align: center;
     font-size: xx-large;
 }
+
 #psec1{
     font-weight: 500;
 }
@@ -230,8 +227,8 @@ nav a:hover {
 .sec3{
     display: flex;
     align-items: center;
-
 }
+
 #h5{
     font-size: 17px;
     position: relative;
@@ -239,41 +236,49 @@ nav a:hover {
     right: 443px;
     margin: 0;
 }
+
 .sec3img{
     width: 355px;
     height: 200px;
 }
+
 #h6{
     font-size: x-large;
     margin: 0;
 }
+
 #psec2{
     font-size: medium;
     top: 10px;
 }
+
 .table{
     margin-top: 20px;
 }
-.table,th,td{
+
+.table, th, td{
     border: 1.3px solid #000;
     border-collapse: collapse;
 }
-th,td{
+
+th, td{
     padding: 10px;
 }
+
 td img{
    width: 200px;
 }
-
 
 #expertise{
     text-align: center;
     font-weight: 200;
 }
+
 .column{
     display: flex;
     flex-direction: column;
 }
+
 #list1{
     list-style-position: outside;
     padding-right: 100px;
@@ -281,16 +286,20 @@ td img{
     flex-direction: column;
     list-style-type: circle;
 }
+
 .footer{
     background-color: #616569;
 }
+
 .footer-container{
     display: flex;
 }
+
 .quicklink{
     margin: -20px;
     padding-bottom: 0;
 }
+
 .footer-container{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -298,6 +307,7 @@ td img{
     padding: 0;
     justify-content: space-evenly;
 }
+
 .listcolumn{
     box-sizing: border-box;
     margin: 0;
@@ -305,21 +315,23 @@ td img{
     text-align: start;
     margin-top: -5px;
 }
+
 #mail{
     padding-top: 50px;
 }
+
 .footer-list{
     list-style-position: inside;
     list-style-type: circle;
     display: inline;
     margin-right: 10px;
 }
+
 #unorderlistfoot{
     list-style: none;
     display: inline-block;
 }
 
-/* General Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     nav {
         display: flex;
@@ -345,6 +357,7 @@ td img{
     #menu-toggle:checked + .menu-icon + .menu {
         display: flex;
     }
+
     .heading1 {
         font-size: 24px;
         text-align: center;
@@ -360,7 +373,6 @@ td img{
     }
 }
 
-/* Smaller Screens (Max Width: 480px) */
 @media screen and (max-width: 480px) {
     .heading1 {
         font-size: 20px;
