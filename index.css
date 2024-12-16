@@ -1,127 +1,135 @@
-body{
+body {
     margin: -0.01%;
     background: linear-gradient(-60deg, #aec6cf 52%, #F0EAD6);
 }
 
-.heading1{
+.heading1 {
     font-size: 30px;
     font-weight: 550;
     text-align: center;
 }
+
 /* Home Navigation Styles */
 nav {
-    position: relative; /* Ensures the nav bar is positioned relative to its normal flow, used for positioning child elements */
+    position: relative;
 }
 
 nav a {
-    color: rgb(0, 0, 0); /* Sets the link color to black */
-    text-decoration: none; /* Removes the underline from the links */
-    margin-right: 20px; /* Adds spacing between the navigation links */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Uses a system font stack for cross-device compatibility */
-    font-weight: 500; /* Sets a medium font weight for the links */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
 }
 
-/* Hamburger Menu Icon */
+/* Hamburger Menu Icon for Mobile */
 .menu-icon {
-    display: none; /* Hides the hamburger icon on larger screens */
-    font-size: 30px; /* Sets the size of the hamburger icon */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the icon */
-    padding: 10px; /* Adds padding around the hamburger icon */
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
 }
 
-/* Hide the checkbox (used for toggling the menu) */
 #menu-toggle {
-    display: none; /* The checkbox is hidden but is still functional */
+    display: none;
 }
 
-/* Regular menu displayed on large screens */
 .menu {
-    display: flex; /* Horizontally aligns the navigation items */
-    list-style-type: none; /* Removes the default bullet points from the list items */
+    display: flex;
+    list-style-type: none;
 }
 
 .menu li {
-    margin-right: 20px; /* Adds space between each navigation item */
+    margin-right: 20px;
 }
 
-/* Hover effect for the links */
+/* Hover effect for navigation links */
 nav a:hover {
-    color: rgb(51, 101, 207); /* Changes the color of the links when hovered */
+    color: rgb(51, 101, 207);
 }
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 480px) {
     .menu {
-        display: none; /* Hides the navigation menu by default on small screens */
-        flex-direction: column; /* Changes the menu layout to vertical */
-        width: 100%; /* Makes the menu take the full width of the screen */
-        text-align: center; /* Centers the text within the menu */
-        background-color: #f5f5f5; /* Sets a light background color for the mobile menu */
-        position: fixed; /* Fixes the menu relative to the viewport */
-        top: 50px; /* Positions the menu 50px below the top */
-        left: 0; /* Aligns the menu to the left side */
-        max-height: calc(100vh - 50px); /* Ensures the menu fits within the screen height minus the 50px top offset */
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #f5f5f5;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        max-height: calc(100vh - 50px);
     }
 
     #menu-toggle:checked + .menu-icon + .menu {
-        display: flex; /* Displays the menu when the checkbox (menu toggle) is checked */
+        display: flex;
     }
 
     .menu-icon {
-        display: block; /* Displays the hamburger icon on small screens */
-        margin-right: 10px; /* Moves the hamburger icon slightly to the left */
+        display: block;
+        margin-right: 10px;
     }
 
     .menu li {
-        margin: 10px 0; /* Adds vertical spacing between menu items on small screens */
+        margin: 10px 0;
     }
 }
-.hero{
+
+.hero {
     background-image: url(https://img.freepik.com/premium-photo/busy-hospital-corridor-with-doctors-nurses-walking-long-exposure-motion-blur_601748-49748.jpg?w=826);
     background-size: cover;
     margin-top: -74px;
 }
-#herotxt{
+
+#herotxt {
     font-weight: 800;
     font-size: xx-large;
     text-align: center;
     padding: 190px;
-    
 }
-.heading2{
+
+.heading2 {
     text-align: center;
 }
-.headtxt{
+
+.headtxt {
     left: 20px;
 }
-.headsect{
+
+.headsect {
     block-size: 105px;
 }
-#logo{
+
+#logo {
     width: 350px;
     height: 300px;
     position: relative;
     bottom: 166px;
     block-size: 240px;
 }
-.section2{
+
+.section2 {
     display: grid;
     grid-template-columns: 300px 500px;
     justify-content: space-evenly;
 }
-.p1{
+
+.p1 {
     display: grid;
     font-weight: 500;
-    font-size: 22px;    
+    font-size: 22px;
     line-height: 2rem;
     justify-content: center;
     align-items: center;
 }
-.img1{
+
+.img1 {
     width: 300px;
     height: 370px;
 }
-.section3{
+
+.section3 {
     font-weight: 500;
     clear: both;
     font-size: 22px;
@@ -131,54 +139,55 @@ nav a:hover {
     grid-column: 200px 200px;
 }
 
-#lochead{
+#lochead {
     font-weight: 800;
     font-size: xx-large;
 }
-.location-container{
+
+.location-container {
     display: grid;
     grid-template-columns: 290px 290px 290px;
     justify-content: space-evenly;
     margin-bottom: 40px;
 }
 
-.location{
+.location {
     position: relative;
 }
 
-.location img{
+.location img {
     width: 290px;
     height: 300px;
     object-fit: cover;
 }
 
-.description{
+.description {
     position: absolute;
     bottom: 0;
     background-color: #f8f7f788;
     color: rgb(0, 0, 0);
     padding: 9px;
     opacity: 0;
-    transition: opacity 0.3 ease;
+    transition: opacity 0.3s ease;
 }
 
-.location:hover .description{
+.location:hover .description {
     opacity: 1;
 }
 
-
-
-#expertise{
+#expertise {
     text-align: center;
     position: relative;
     left: 40px;
     top: 50px;
 }
-.column{
+
+.column {
     display: grid;
     padding: 20px;
 }
-#list1{
+
+#list1 {
     list-style-position: outside;
     padding: 40px;
     grid: column;
@@ -187,180 +196,184 @@ nav a:hover {
     font-size: 22px;
     font-weight: lighter;
 }
-#list2{
+
+#list2 {
     list-style-position: outside;
     padding: 40px;
     list-style-type: circle;
     font-size: 22px;
     font-weight: lighter;
 }
-.dacolumn{
+
+.dacolumn {
     display: grid;
     grid-template-columns: 200px 200px;
 }
 
-
-
-
-
-
-.footer{
+.footer {
     background-color: #616569;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
 }
-.quicklink{
+
+.quicklink {
     margin: -20px;
     padding-bottom: 0;
 }
-.footer-container{
+
+.footer-container {
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
     padding: 0;
     justify-content: space-evenly;
 }
-.listcolumn{
+
+.listcolumn {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-align: start;
     margin-top: -5px;
 }
-#mail{
+
+#mail {
     padding-top: 50px;
 }
-.footer-list{
+
+.footer-list {
     list-style-position: inside;
     list-style-type: circle;
     display: inline;
     margin-right: 10px;
 }
-#unorderlistfoot{
+
+#unorderlistfoot {
     list-style: none;
     display: inline-block;
 }
 
+/* Media Queries for different screen sizes */
 @media screen and (max-width: 1200px) {
     .heading1 {
-      font-size: 28px;
+        font-size: 28px;
     }
     .menu li {
-      margin-right: 15px;
+        margin-right: 15px;
     }
     .hero {
-      padding: 150px 20px;
+        padding: 150px 20px;
     }
     #herotxt {
-      font-size: large;
-      padding: 150px 20px;
+        font-size: large;
+        padding: 150px 20px;
     }
     .section2 .p1 {
-      margin-left: 50px;
+        margin-left: 50px;
     }
     .section2 .img1 {
-      margin-right: 50px;
+        margin-right: 50px;
     }
-  }
-  
-  @media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 992px) {
     .heading1 {
-      font-size: 26px;
+        font-size: 26px;
     }
     .hero {
-      padding: 130px 20px;
+        padding: 130px 20px;
     }
     #herotxt {
-      font-size: large;
-      padding: 130px 20px;
+        font-size: large;
+        padding: 130px 20px;
     }
     .section2 .p1 {
-      margin-left: 30px;
+        margin-left: 30px;
     }
     .section2 .img1 {
-      margin-right: 30px;
+        margin-right: 30px;
     }
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .heading1 {
-      font-size: 24px;
+        font-size: 24px;
     }
     .menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      background-color: #f5f5f5;
-      position: fixed;
-      top: 50px;
-      left: 0;
-      max-height: calc(100vh - 50px);
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #f5f5f5;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        max-height: calc(100vh - 50px);
     }
     #menu-toggle:checked + .menu-icon + .menu {
-      display: flex;
+        display: flex;
     }
     .menu-icon {
-      display: block;
+        display: block;
     }
     .menu li {
-      margin: 10px 0;
+        margin: 10px 0;
     }
     .hero {
-      padding: 100px 20px;
+        padding: 100px 20px;
     }
     #herotxt {
-      font-size: large;
-      padding: 100px 20px;
+        font-size: large;
+        padding: 100px 20px;
     }
     .section2 .p1 {
-      margin-left: 10px;
-      text-align: center;
+        margin-left: 10px;
+        text-align: center;
     }
     .section2 .img1 {
-      width: 100%;
-      margin: 20px 0;
+        width: 100%;
+        margin: 20px 0;
     }
     .section3 {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
     #lochead {
-      font-size: large;
-      text-align: center;
+        font-size: large;
+        text-align: center;
     }
     .location-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-gap: 15px;
-      margin: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        margin: 20px;
     }
     .footer-container {
-      grid-template-columns: 1fr;
-      padding: 10px;
+        grid-template-columns: 1fr;
+        padding: 10px;
     }
     .listcolumn {
-      margin-top: 10px;
+        margin-top: 10px;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .heading1 {
-      font-size: 22px;
+        font-size: 22px;
     }
     .hero {
-      padding: 80px 20px;
+        padding: 80px 20px;
     }
     #herotxt {
-      font-size: medium;
-      padding: 80px 20px;
+        font-size: medium;
+        padding: 80px 20px;
     }
     .section2 .p1 {
-      margin-left: 5px;
+        margin-left: 5px;
     }
     .section2 .img1 {
-      margin: 10px 0;
+        margin: 10px 0;
     }
-  }
-  
+}
