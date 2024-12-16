@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="CSS/checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <div class="checkout-form-and-cart">
+            <!-- Customer Details Form -->
+            <form id="checkout-form" class="checkout-form">
+                <h2>Customer Information</h2>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" placeholder="Enter your age" required>
+                    <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" maxlength="19" placeholder="1234 5678 9012 3456" required>
+                    <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" placeholder="Enter your address" required></textarea>
+                    <small class="error-msg"></small>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Telephone Number:</label>
+                    <input type="text" id="telephone" placeholder="Enter your telephone number" required>
+                    <small class="error-msg"></small>
+                </div>
+                <button type="button" id="buy-now">Buy Now</button>
+            </form>
+
+            <!-- Cart Items Table -->
+            <div class="cart-summary">
+                <h2>Your Items</h2>
+                <table class="receipt-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="receipt-items">
+                        <!-- Dynamic content will be added here -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
+                            <td><strong id="total-price">$0</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

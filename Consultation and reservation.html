@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifeline medical and Research center</title>
+    <link rel="stylesheet" href="CSS/reservation.css">
+</head>
+<body>
+    <div class="headsect">
+        <div class="headtxt">
+          <h1 class="heading1">
+            <em>Lifeline medical and Research center</em>
+          </h1>
+          <h2 class="heading2">
+            <em>A healthier you starts here</em>
+          </h2>
+        </div>
+      
+    <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="Doctors.html">Doctors</a></li>
+          <li><a href="Consultation and reservation.html">Consulting</a></li>
+          <li><a href="pharmacy.html">Pharmacy</a></li>
+      </ul>
+  </nav>
+        <header>
+          <h1 id="resh1">Consulting and Reservation</h1>
+        </header>
+  
+        <section class="info-section">
+          <form class="form">
+              <h2>Your information</h2>
+              <div class="form-group">
+                  <label for="fname">Name:</label>
+                  <input type="text" id="fname" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" placeholder="(077)-567-7890">
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                  <label>Gender:</label>
+                  <input type="radio" name="gender" value="male"> Male
+                  <input type="radio" name="gender" value="female"> Female
+              </div>
+              <div class="form-group">
+                  <label for="age">Age:</label>
+                  <select name="age" id="age">
+                      <option value="1-10">1-10</option>
+                      <option value="11-20">11-20</option>
+                      <option value="21-30">21-30</option>
+                      <option value="31-40">31-40</option>
+                      <option value="41-50">41-50</option>
+                      <option value="51-60">51-60</option>
+                      <option value="61+">61+</option>
+                  </select>
+              </div>
+          </form>
+        </section>
+  
+        <section class="info-section">
+          <form class="form">
+              <h2>Your Requests</h2>
+          <div class="form-group">
+              <label for="doctor">Doctor you'd like to see:</label>
+              <input type="text" id="doctor" placeholder="Enter doctor's name">
+          </div>
+          <div class="form-group">
+              <label for="additional-info">Additional Information:</label>
+              <textarea id="additional-info" placeholder="Enter any additional information"></textarea>
+          </div>
+          </form>
+        </section>
+  
+        <button type="button" id="button" onclick="alert('Booked')">Book</button>
+
+        <footer class="footer">
+            <div class="footer-container">
+            <div class="item" id="mail">
+                <label for="email">Email</label><br />
+                <input type="email" placeholder="Lifeline@gmail.com" />
+            </div>
+            <div class="item">
+                
+                <h4 id="quicklink">Quick links</h4>
+                <div class="listcolumn">
+                <ul id="unorderlistfoot">
+                    <li><a href="Aboutus.html">Aboutus</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Doctors.html">Doctors</a></li>
+                    <li><a href="Consultation and reservation.html">Consultation and reservation</a></li>
+                    <li><a href="Pharmacy.html">Pharmacy</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="item">
+                <h5>Contact us</h5>
+                <p>
+                No.123,Galle road,<br />
+                Colombo 03,Srilanka <br />+94 112 345 678
+                </p>
+            </div>
+            </div>
+        </footer>
+</body>
+</html>
