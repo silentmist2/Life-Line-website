@@ -3,37 +3,37 @@
        "Analgesics": [
            {
                "id": "1",
-               "image": "images/Acetaminophen.jpg",
+               "image": "Acetaminophen.jpg",
                "name": "Acetaminophen (500mg)",
                "price": 16
            },
            {
                "id": "2",
-               "image": "images/Ibuprofen.jpg",
+               "image": "Ibuprofen.jpg",
                "name": "Ibuprofen (200mg)",
                "price": 26
            },
            {
                "id": "3",
-               "image": "images/Aspirin.jpg",
+               "image": "Aspirin.jpg",
                "name": "Aspirin (325mg)",
                "price": 22
            },
            {
                "id": "4",
-               "image": "images/Naproxen.png",
+               "image": "Naproxen.png",
                "name": "Naproxen (220mg)",
                "price": 64  
            },
            {
                "id": "5",
-               "image": "images/Diclofenac.jpg",
+               "image": "Diclofenac.jpg",
                "name": "Diclofenac (50mg)",
                "price": 64
            },
            {
                "id": "6",
-               "image": "images/Morphine.jpg",
+               "image": "Morphine.jpg",
                "name": "Morphine (10mg)",
                "price": 480
            }
@@ -41,37 +41,37 @@
        "Antibiotics": [
            {
                "id": "7",
-               "image": "images/Amoxicillin.png",
+               "image": "Amoxicillin.png",
                "name": "Amoxicillin (500mg)",
                "price": 128
            },
            {
                "id": "8",
-               "image": "images/Penicillin.jpeg",
+               "image": "Penicillin.jpeg",
                "name": "Penicillin (500mg)",
                "price": 107
            },
            {
                "id": "9",
-               "image": "images/Ciprofloxacin.png",
+               "image": "Ciprofloxacin.png",
                "name": "Ciprofloxacin (500mg)",
                "price": 240
            },
            {
                "id": "10",
-               "image": "images/Azithromycin.jpg",
+               "image": "Azithromycin.jpg",
                "name": "Azithromycin (250mg)",
                "price": 747
            },
            {
                "id": "11",
-               "image": "images/Doxycycline.png",
+               "image": "Doxycycline.png",
                "name": "Doxycycline (100mg)",
                "price": 160
            },
            {
                "id": "12",
-               "image": "images/Cephalexin.jpeg",
+               "image": "Cephalexin.jpeg",
                "name": "Cephalexin (500mg)",
                "price": 117
            }
@@ -79,37 +79,37 @@
        "Antidepressants": [
            {
                "id": "13",
-               "image": "images/Fluoxetine.jpg",
+               "image": "Fluoxetine.jpg",
                "name": "Fluoxetine (20mg)",
                "price": 160
            },
            {
                "id": "14",
-               "image": "images/Sertraline.jpg",
+               "image": "Sertraline.jpg",
                "name": "Sertraline (50mg)",
                "price": 192
            },
            {
                "id": "15",
-               "image": "images/Escitalopram.jpg",
+               "image": "Escitalopram.jpg",
                "name": "Escitalopram (10mg)",
                "price": 213
            },
            {
                "id": "16",
-               "image": "images/Citalopram.jpg",
+               "image": "Citalopram.jpg",
                "name": "Citalopram (20mg)",
                "price": 171
            },
            {
                "id": "17",
-               "image": "images/Amitriptyline.jpeg",
+               "image": "Amitriptyline.jpeg",
                "name": "Amitriptyline (25mg)",
                "price": 128
            },
            {
                "id": "18",
-               "image": "images/Venlafaxine.jpeg",
+               "image": "Venlafaxine.jpeg",
                "name": "Venlafaxine (75mg)",
                "price": 235
            }                
@@ -117,37 +117,37 @@
        "Antihistamines": [
            {
                "id": "19",
-               "image": "images/Cetirizine.jpg",
+               "image": "Cetirizine.jpg",
                "name": "Cetirizine (10mg)",
                "price": 85
            },
            {
                "id": "20",
-               "image": "images/Loratadine.jpeg",
+               "image": "Loratadine.jpeg",
                "name": "Loratadine (10mg)",
                "price": 75
            },
            {
                "id": "21",
-               "image": "images/Fexofenadine.jpg",
+               "image": "Fexofenadine.jpg",
                "name": "Fexofenadine (180mg)",
                "price": 107
            },
            {
                "id": "22",
-               "image": "images/Diphenhydramine.png",
+               "image": "Diphenhydramine.png",
                "name": "Diphenhydramine (25mg)",
                "price": 80
            },
            {
                "id": "23",
-               "image": "images/Chlorpheniramine.jpg",
+               "image": "Chlorpheniramine.jpg",
                "name": "Chlorpheniramine (4mg)",
                "price": 67
            },
            {
                "id": "24",
-               "image": "images/Rupatadine.jpg",
+               "image": "Rupatadine.jpg",
                "name": "Rupatadine (10mg)",
                "price": 92
            }              
@@ -155,37 +155,37 @@
        "Antihypertensives": [
            {
                "id": "25",
-               "image": "images/Lisinopril.jpg",
+               "image": "Lisinopril.jpg",
                "name": "Lisinopril  (5mg)",
                "price": 95
            },
            {
                "id": "26",
-               "image": "images/Amlodipine.jpg",
+               "image": "Amlodipine.jpg",
                "name": "Amlodipine (5mg)",
                "price": 107
            },
            {
                "id": "27",
-               "image": "images/Atenolol.jpeg",
+               "image": "Atenolol.jpeg",
                "name": "Atenolol (50mg)",
                "price": 85
            },
            {
                "id": "28",
-               "image": "images/Losartan.jpeg",
+               "image": "Losartan.jpeg",
                "name": "Losartan (50mg)",
                "price": 128
            },
            {
                "id": "29",
-               "image": "images/Metoprolol.jpg",
+               "image": "Metoprolol.jpg",
                "name": "Metoprolol (50mg)",
                "price": 96
            },
            {
                "id": "30",
-               "image": "images/Valsartan.jpeg",
+               "image": "Valsartan.jpeg",
                "name": "Valsartan (80mg)",
                "price": 149
            }                
