@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-form-and-cart {
+    display: flex;
+    gap: 30px;
+}
+
+.checkout-form {
+    flex: 1;
+}
+
+.checkout-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-group .error-msg {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+#buy-now {
+    width: 100%;
+    padding: 10px;
+    background-color: #778899;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#buy-now:hover {
+    background-color: #808080;
+}
+
+.cart-summary {
+    flex: 1;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+.cart-summary h2 {
+    margin-bottom: 20px;
+}
+
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receipt-table th, .receipt-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tfoot {
+    font-weight: bold;
+}
