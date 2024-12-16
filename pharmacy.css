@@ -1,100 +1,98 @@
-/* Home Navigation Styles */
 nav {
-    position: relative; /* Ensures the nav bar is positioned relative to its normal flow, used for positioning child elements */
+    position: relative;
 }
 
 nav a {
-    color: rgb(0, 0, 0); /* Sets the link color to black */
-    text-decoration: none; /* Removes the underline from the links */
-    margin-right: 20px; /* Adds spacing between the navigation links */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Uses a system font stack for cross-device compatibility */
-    font-weight: 500; /* Sets a medium font weight for the links */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
 }
 
-/* Hamburger Menu Icon */
 .menu-icon {
-    display: none; /* Hides the hamburger icon on larger screens */
-    font-size: 30px; /* Sets the size of the hamburger icon */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the icon */
-    padding: 10px; /* Adds padding around the hamburger icon */
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
 }
 
-/* Hide the checkbox (used for toggling the menu) */
 #menu-toggle {
-    display: none; /* The checkbox is hidden but is still functional */
+    display: none;
 }
 
-/* Regular menu displayed on large screens */
 .menu {
-    display: flex; /* Horizontally aligns the navigation items */
-    list-style-type: none; /* Removes the default bullet points from the list items */
+    display: flex;
+    list-style-type: none;
 }
 
 .menu li {
-    margin-right: 20px; /* Adds space between each navigation item */
+    margin-right: 20px;
 }
 
-/* Hover effect for the links */
 nav a:hover {
-    color: rgb(51, 101, 207); /* Changes the color of the links when hovered */
+    color: rgb(51, 101, 207);
 }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 480px) {
     .menu {
-        display: none; /* Hides the navigation menu by default on small screens */
-        flex-direction: column; /* Changes the menu layout to vertical */
-        width: 100%; /* Makes the menu take the full width of the screen */
-        text-align: center; /* Centers the text within the menu */
-        background-color: #f5f5f5; /* Sets a light background color for the mobile menu */
-        position: fixed; /* Fixes the menu relative to the viewport */
-        top: 50px; /* Positions the menu 50px below the top */
-        left: 0; /* Aligns the menu to the left side */
-        max-height: calc(100vh - 50px); /* Ensures the menu fits within the screen height minus the 50px top offset */
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #f5f5f5;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        max-height: calc(100vh - 50px);
     }
 
     #menu-toggle:checked + .menu-icon + .menu {
-        display: flex; /* Displays the menu when the checkbox (menu toggle) is checked */
+        display: flex;
     }
 
     .menu-icon {
-        display: block; /* Displays the hamburger icon on small screens */
-        margin-right: 10px; /* Moves the hamburger icon slightly to the left */
+        display: block;
+        margin-right: 10px;
     }
 
     .menu li {
-        margin: 10px 0; /* Adds vertical spacing between menu items on small screens */
+        margin: 10px 0;
     }
 }
 
-
-body{
+body {
     margin: -8px;
-    background: linear-gradient(-60deg, #aec6cf 52%, #F0EAD6)
+    background: linear-gradient(-60deg, #aec6cf 52%, #F0EAD6);
 }
-h1{
+
+h1 {
     position: relative;
     text-align: center;
 }
-h2{
+
+h2 {
     position: relative;
     text-align: center;
 }
-.medsec{
+
+.medsec {
     position: relative;
     text-align: center;
     background-color: #616569;
 }
 
-.listofProducts{
+.listofProducts {
     display: grid;
-    gap: 20px; /* Space between products */
+    gap: 20px;
     padding: 20px;
     justify-items: center;
 }
-h4{
+
+h4 {
     margin: 0px;
 }
+
 .productCard {
     border: 1px solid #ccc;
     background-color: #F2F2F2;
@@ -119,25 +117,27 @@ h4{
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-.message{
+.message {
     position: relative;
     left: 70px;
     margin: 0px;
 }
-.pricing{
+
+.pricing {
     font-size: 1.2em;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
 }
 
-h6{
+h6 {
     font-size: xx-large;
     font-weight: 700;
     position: relative;
     left: 100px;
     margin: 0px;
 }
+
 .cartTab {
     margin: 20px auto;
     padding: 10px;
@@ -147,11 +147,13 @@ h6{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .cartTab table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
+
 .cartTab table th {
     background-color: grey;
     color: white;
@@ -161,20 +163,17 @@ h6{
     font-size: 16px;
 }
 
-/* Table rows */
 .cartTab table td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
 }
 
-/* Row for totals */
 .cartTab .totals-row {
     font-weight: bold;
     background-color: #f1f1f1;
 }
 
-/* Style for action buttons */
 .cartTab .action-buttons {
     display: flex;
     justify-content: space-between;
@@ -190,7 +189,6 @@ h6{
     transition: background-color 0.3s ease;
 }
 
-/* Buy now button */
 .cartTab button.buy-now {
     background-color: #4CAF50;
     color: white;
@@ -200,7 +198,6 @@ h6{
     background-color: #45a049;
 }
 
-/* Favorite button */
 .cartTab button.favorite {
     background-color: #2196F3;
     color: white;
@@ -209,7 +206,8 @@ h6{
 .cartTab button.favorite:hover {
     background-color: #1e87d1;
 }
-.listcart{
+
+.listcart {
     width: auto;
 }
 
@@ -223,9 +221,9 @@ h6{
     padding: 10px;
     text-align: center;
     margin-top: 20px;
-} 
+}
 
-.category-header{
+.category-header {
     background-color: #616569;
     color: white;
     padding: 15px;
@@ -234,12 +232,14 @@ h6{
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
 .category-container {
     display: flex;
     flex-wrap: wrap;
 }
 
 --------------------------------------------------------
+
 .category-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -255,7 +255,7 @@ h6{
 }
 
 .productCard {
-    flex: 0 0 30%;  /* Ensures each product takes up 30% of the row width */
+    flex: 0 0 30%;
     margin: 10px;
     border: 1px solid #ddd;
     padding: 10px;
@@ -272,6 +272,7 @@ h6{
     font-size: 1.5em;
     margin: 20px 0;
 }
+
 .productCard button {
     display: block;
     width: 100%;
@@ -285,18 +286,18 @@ h6{
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+
 .productCard button:hover {
     background-color: #333;
 }
+
 --------------------------------------------------------
-
-
-
 
 .footer {
     padding: 20px 0;
     text-align: center;
 }
+
 .footer-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -305,34 +306,41 @@ h6{
     background-color: #616569;
     color: rgb(32, 29, 29);
 }
-.quicklink{
+
+.quicklink {
     margin: -20px;
     padding-bottom: 0;
 }
-.footer-container{
+
+.footer-container {
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
     padding: 0;
     justify-content: space-evenly;
 }
-.listcolumn{
+
+.listcolumn {
     text-align: start;
     list-style: none;
 }
+
 .listcolumn li {
     margin-bottom: 10px;
 }
-#mail{
+
+#mail {
     padding-top: 50px;
 }
-.footer-list{
+
+.footer-list {
     list-style-position: inside;
     list-style-type: circle;
     display: inline;
     margin-right: 10px;
 }
-#unorderlistfoot{
+
+#unorderlistfoot {
     list-style: none;
     display: inline-block;
 }
